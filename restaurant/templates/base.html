@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh food</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <!-- boxicons icon -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<!-- main -->
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% block headerlinks %}
+
+{% endblock headerlinks %}
+<style>
+    {% block style %}
+    
+    {% endblock style %}
+</style>
+</head>
+
+
+<body>          
+ 
+                                <!-- navbar start -->
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="/">
+                <div class="logo">
+                    Freshfood
+            </div>
+        </a>
+
+        <div class="menu h-xs">
+            
+             <a class="menu-item home active" href="/">
+                
+                    Home 
+                
+            </a>
+            <a class="menu-item about" href="#about">
+                
+                    About
+                
+            </a>
+            <a class="menu-item food" href="#food">
+                
+                    Menu
+                
+            </a>
+            <a class="menu-item testimonial" href="#testimonial">
+                
+                    Testimonials
+                
+            </a>
+
+        </div>
+
+        <div class="right-menu">
+            <div class="cart-btn">
+                <i class='bx bx-cart-alt'></i>
+                <span>2</span>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+<!-- 
+    <nav>
+        <div class="container">
+            <ul>
+                <li class="home active"><a href="#home">Home</a></li>
+                <li class="about"><a href="#about">About</a></li>
+                <li class="food"><a href="#food">Menu</a></li>
+                <li class="testimonial"><a href="#testimonial">Testimonial</a></li>
+            </ul>
+        </div>
+    </nav> -->
+                                            <!-- navbar end -->
+    {% block body %}
+    {% endblock body %}
+
+
+
+                                            <!-- Footer start -->
+    <section class="footer bg-img" style="background-image: url({% static 'assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>Fresh food</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ullam ratione, ad cum doloremque porro culpa sit? Quaerat at culpa itaque quis libero, earum, modi vel qui, porro nam ipsa?</p>
+                    <br>
+                    <p>Email: asmaarali@gmail.com</p>
+                    <p>Phone: +92 3102075046</p>
+                    <p>Website: Freshfood.com</p>
+                </div>
+                <div class="col-2 col-xs-12">
+                    <h1>About us</h1>
+                    <br>
+                    <p><a href="#">Chfs</a></p>
+                    <p><a href="#">Menu</a></p>
+                    <p><a href="#">Testimonials</a></p>
+                    <p><a href="#">Lorem</a></p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1>Subcribe</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nam eaque molestias omnis in repudiandae ab fugit esse ipsam voluptate perferendis tempora sequi explicabo sit, corrupti assumenda minus, impedit beatae.</p>
+                    <br>
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your Email">
+                        <button>Subcribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                                            <!-- footer end -->
+
+
+
+
+
+
+<!-- back to top button start -->
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-chevron-up"></i>
+    </a>
+<!-- back to top button end -->
+
+<!-- mb nav start -->
+<div class="mb-nav">
+    <div class="mb-nav-item home active">
+        <a href="#home"><i class="bx bxs-home"></i></a>
+    </div>
+    <div class="mb-nav-item about">
+        <a href="#about"><i class="bx bxs-wink-smile"></i></a>
+    </div>    
+        
+    <div class="mb-nav-item food">
+        <a href="#food"><i class="bx bxs-food-menu"></i></a>
+    </div>    
+
+        
+    <div class="mb-nav-item testimonial">
+       <a href="#testimonial"><i class="bx bxs-comment-detail"></i></a> 
+    </div>    
+<div class="mb-move-item"></div>
+</div>
+
+
+<!-- mb nav end -->
+
+
+<script src="{% static 'main.js' %}"></script> 
+</body>
+</html>

@@ -1,0 +1,12 @@
+git init
+git status
+git add .
+git commit -m "first commit"
+git push -u origin master
+
+#after changes in project run this command
+git status
+git add .
+git status
+git commit -m "second commit"
+git push

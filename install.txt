@@ -1,0 +1,25 @@
+https://realpython.com/django-setup/
+https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
+
+
+Step		Description			Command
+
+1a	Set up a virtual environment		python -m venv env or py -m venv env
+1b	Activate the virtual environment	source env/bin/activate or .\env\Scripts\activate
+2a	Install Django				python -m pip install django
+2b	Pin your dependencies			python -m pip freeze > requirements.txt
+3	Set up a Django project			django-admin startproject <projectname>
+4	Start a Django app			python manage.py startapp <appname>
+
+
+
+-----------------------------------------------
+running script is disabled error
+open powershell as administrator
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+------------setting requirements----------
+py -m pip freeze
+pip freeze -l > requirements.txt  
+----------installing requirements---------
+pip install -r requirements.txt
