@@ -2,6 +2,7 @@ git init
 git status
 git add .
 git commit -m "first commit"
+git remote add origin https://github.com/Asmaarali/food-django.git
 git push -u origin master
 
 #after changes in project run this command
